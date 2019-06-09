@@ -1,0 +1,10 @@
+<!DOCTYPE>
+
+<center><h1>word count app!</h1></center>
+
+<a href="{% url 'about' %}">글자수 세러 가기!</a>
+
+    <form action="{% url 'result' %}" >
+        <textarea name="fulltext" cols="50" rows="10"></textarea>
+        <input type="submit" value="Count!">
+    </form>

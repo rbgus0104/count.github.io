@@ -1,0 +1,14 @@
+<a href="{% url 'index' %}">리트</a>
+
+
+<h1>텍스트는 {{num}}개로 이루어져있당</h1>
+<br>
+<h2>입력한거:</h2>
+{{full}}
+<h2>단어수:</h2>
+{% for word, many in dict %}
+
+{{word}} : {{many}}
+
+<br>
+{%endfor%}
